@@ -1,0 +1,85 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.google.com/specimen/Outfit');
+
+* { 
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+
+    --cor1: #ffffff;
+    --cor2: #d6e2f0;
+    --cor3: #6f798d; 
+    --cor4: hsl(218, 44%, 22%); 
+
+    --fonte-padrao: "Outfit", sans-serif; 
+}
+
+body {
+  background-color:var(--cor2);
+}
+
+main {
+    background-color: var(--cor1);
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.597);
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.427);
+}
+
+#frase1 {
+    font-weight: 700;
+    font-family: var(--fonte-padrao); 
+    font-size: 18px;
+    color: #1d7bf5;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
+    line-height: 25px;
+}
+
+p {
+    text-align: justify;
+    text-align: center;
+    color: var(--cor3);
+    font-weight: 500;
+    font-family: 16px;
+}
+
+.attribution { 
+    font-size: 13px; text-align: center; 
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.attribution a { 
+    color: var(--cor4);
+    text-decoration: none; 
+    color: #25272a;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+    color: white;
+    padding: 2px;
+    font-size: 15px;
+    background-color: #2E83F2;
+    border-radius: 4px;
+    font-weight: bolder;
+}
