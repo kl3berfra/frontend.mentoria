@@ -5,25 +5,26 @@
 @import url(https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Fraunces:opsz,wght@9..144,300&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap);
 
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
 :root {
+    /*primary*/
     --darkcyan: #3c8067;  
     --cream: #f2ebe3; 
 
+    /*neutral*/
     --darkblue: #1c232b; 
     --grayishblue: #6c7289f4; 
     --white: #ffffff; 
 
+    /*typgraphy*/
     --font-mont: 'Montserrat', sans-serif;
     --font-fraunces: 'Fraunces', serif;
     --font-cinzel: 'Cinzel', serif;
     --font-number: 'Bodoni Moda', serif;
-}
-
-@media screen and (max-width:700px) {
-    #productmobi {
-        width: 100px;
-        height: 800px;
-    }
 }
 
 body {
@@ -34,115 +35,35 @@ body {
 
 .caixa1 {
     background-color: var(--cream);
-    max-width: 1200px;
-    min-width: 300px;
+    max-width: 1440px;
     height: 650px;
     margin: auto;
     margin-top: -150px;
     padding-top: 150px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.328);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.328);
     border-radius: 20px;
 }
 
 .conteudo {
     background-color: var(--white);
-    max-width: 600px;
+    max-width: 650px;
+    max-height: 487px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: auto;
-    height: 500px;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.249);
-    padding-right: 50px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.168);
 }
-
-@media screen and (max-width: 680px) {
-    .conteudo {
-        margin-top: -100px;
-        width: 400px;
-        height: 700px;
-        
-    }
-}
-
 
 .productdesk {
-    height: 500px;
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.conteudo > .text1 {
-    display: block;
-    margin-top: -500px;
-    margin-left: 360px;
-    padding-top: 30px;
-    letter-spacing: 6px;
-    font-family: var(--font-cinzel);
-    color: var(--grayishblue);
-    font-size: 15px;
-}
 
-.conteudo > .text2 {
-    display: block;
-    margin-left: 360px; 
-    font-family:var(--font-fraunces);
-    font-size: 36px;
-    margin-top: 20px;
-    line-height: 35px;
-}
-
-.conteudo > .text3 {
-    text-align: left; 
-    display: block;
-    margin-top: 30px;
-    margin-left: 360px;
-    color: var(--grayishblue);
-    font-size: 16px;
-    font-family: var(--font-mont);
-    font-weight: 600;
-    letter-spacing: 1.5px;
-}
-
-.conteudo > .text4 {
-    display: block;
-    margin-top: 30px;
-    margin-left: 360px;
-    color: var(--darkcyan);
-    font-size: 36px;
-    font-family:var(--font-number); 
-    width: max-content;
-}
-
-.conteudo > .text5 {
-    display: block;
-    width: max-content;
-    font-size: 17px;
-    margin-left: 500px;
-    margin-top: -70px;
-    color: var(--grayishblue);
-    font-family: var(--font-number);
-}
-
-.conteudo > button {
-    margin-left: 360px;
-    width: 200px;
-    border-radius: 10px;
-    margin-top: 15px;
-    background-color: var(--darkcyan);
-    border: none;
-    padding: 2px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.298);
-}
-
-.conteudo > button:hover {
-    cursor: pointer;
-}
-
-.conteudo > button > .text6 {
-    color: white;
-    font-family: var(--font-mont);
-    font-weight: 900;
-    font-size: 16px;
-}
 
 .madeby {
     width: max-content;
