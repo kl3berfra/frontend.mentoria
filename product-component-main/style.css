@@ -30,40 +30,42 @@
 body {
     font-size: 14px;
     background-color: var(--white);
-    padding-top: 200px;
 }
 
-.caixa1 {
+#container {
+    margin: auto;
+    position: relative;
     background-color: var(--cream);
     max-width: 1440px;
-    height: 650px;
-    margin: auto;
-    margin-top: -150px;
-    padding-top: 150px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.328);
-    border-radius: 20px;
+    min-width: 375px;
+    height: 96vh;
+    background-image: url(images/target001.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .conteudo {
-    background-color: var(--white);
+    background-image: url(images/target001.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50% );
+    background-color: var(--darkcyan);
     max-width: 650px;
-    max-height: 487px;
+    height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: auto;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.168);
 }
 
-.productdesk {
-    display: block;
-    object-fit: cover;
-    max-width: 100%;
+.produto {
+    max-width: 362px;
+    height: 92%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
-
 
 .madeby {
     width: max-content;
