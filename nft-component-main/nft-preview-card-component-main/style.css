@@ -1,0 +1,42 @@
+@charset "UTF-8"; 
+
+@import url(https://fonts.google.com/specimen/Outfit);
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+
+    /* Primárias */
+    --Softblue: #8bacda;
+    --Cyan: #00fff7;
+
+    /* Neutro */ 
+    --mainblue: #0d192b;
+    --cardblue: #14253d;
+    --lineblue: #2f415b;
+
+    /* Fonte */ 
+    --Outfit: 'Outfit', serif; 
+}
+
+body {
+    background-color:var(--mainblue);
+}
+
+.container {
+    background-color: white;
+    width: 650px;
+    height: 650px;
+    display: block;
+    margin: auto;
+}
+
+.img1 {
+    display: block;
+    margin: auto;
+    
+    
+}
