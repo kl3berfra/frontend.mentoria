@@ -1,0 +1,149 @@
+@charset "UTF-8"; 
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+
+:root {
+
+    /* Cores primárias */
+    --Paleblue:   #e0e8ff;
+    --Brightblue: #3829e0;
+
+    /* Cores neutras */
+    --Verypaleblue: #f5f7ff;
+    --Desaturatedblue: #7280a7;
+    --Darkblue: #1f2f56;
+
+    /*Fonte*/ 
+    --Redhat: 'RedHatDisplay', sans-serif; 
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--Paleblue);
+    background-image: url(images/pattern-background-desktop.svg);
+}
+
+/*-----------------Primeira Div-------------*/
+
+.main {
+    background-color: white;
+    width: 450px;
+    height: 650px;
+    margin-top: 100px;
+    margin-left: 100px; 
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px #e0e8ff;
+}
+
+.main > .img-main {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.main > h2 {
+    display: block;
+    width: max-content;
+    margin: auto;
+    padding-top: 30px;
+    font-family: var(--Redhat);
+    color: #1f2f56;
+    font-weight: 800;
+}
+
+.main > .text {
+    padding-top: 12px;
+    font-size: 18px;
+    color: #7280a7;
+    text-align: center;
+}
+
+/*-----------------Segunda Div------------------*/ 
+
+.plano {
+    padding-top: 30px;
+    background-color: none; 
+}
+
+.plano > h2 {
+    width: max-content;
+    color: #1f2f56;
+    display: block;
+    margin-left: 140px;
+    position: absolute;
+    top: 495px;
+    font-size: 16px;
+    font-family: var(--Redhat);
+    font-weight: 800;
+}
+
+.plano > p {
+    color: #7280a7;
+    width: max-content;
+    font-family: var(--Redhat);
+    display: block;
+    margin-left: 140px;
+    position: absolute;
+    top: 525px;
+}
+
+.plano > .icon-music {
+    margin-left: 70px;
+} 
+
+.plano > a {
+    display: block;
+    margin-left: 320px;
+    position: absolute;
+    top: 510px;
+    color: #3829e0;
+    font-family: var(--Redhat);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/*------------------Terceira Div (button)-----------------*/ 
+
+.btn-area {
+    margin-top: 50px;
+}
+
+.btn-area > .btn-pay {
+    background-color: #3829e0;
+    color: #e0e8ff;
+    font-family: var(--Redhat);
+    font-weight: 800;
+    font-size: 12px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    width: 75%;
+    height: 45px;
+    border: none; 
+    margin: auto;
+    box-shadow: 1px 1px 15px #3829e0;
+}
+
+.btn-pay:hover {
+    cursor: pointer;
+}
+
+/*-----------Ultima div-------------*/ 
+
+div > .cancelar {
+    display: block;
+    padding-top: 35px;
+    margin-left: 182px;
+    color: #7280a7;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--Redhat);
+}
+
+.cancelar:hover {
+    cursor: pointer;
+}
