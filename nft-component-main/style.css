@@ -27,12 +27,13 @@ body {
 }
 
 .container {
+    position: relative; 
     background-color: var(--cardblue);
     width: 300px;
     height: 550px;
     display: block;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 90px;
     padding: 20px;
     border: 1px solid #0d192b;
     border-radius: 15px;
@@ -49,12 +50,14 @@ body {
 
 article {
     width: 100%;
+
 }
 
 .frase {
     width: 100%;
     border-bottom: 2px solid #243144;
     height: 190px;
+    
 }
 
 div > h3 {
@@ -62,7 +65,7 @@ div > h3 {
     color: white;
     width: max-content;
     position: absolute;
-    top: 500px;
+    top: 340px;
     color: white;
     font-family: var(--Outfit);
     font-size: 22px;
@@ -72,7 +75,7 @@ div > p {
     color: #8bacda;
     font-family: var(--Outfit);
     position: absolute;
-    top: 550px;
+    top: 390px;
     font-size: 18px;
     max-width: 310px;
     font-weight: 500;
@@ -82,7 +85,7 @@ div > p {
     color: var(--Cyan);
     font-family: var(--Outfit);
     position: absolute;
-    top: 620px;
+    top: 460px;
     width: 100%;
 }
 
@@ -118,9 +121,9 @@ div > p {
 
 .icon-kel {
     position: absolute;
-    top: 550px;
+    top: 400px;
     left: 5px;
-    border-radius: 50px;
+    border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.561); 
 }
 
@@ -134,7 +137,7 @@ div > p {
     color:#8bacda;
     position: absolute;
     left: 60px;
-    top: 556px;
+    top: 407px;
     font-family: var(--Outfit);
     font-size: 16px;
     font-weight: 500;
@@ -153,5 +156,10 @@ a:hover {
     cursor: pointer;
 }
 
-
+@media screen and (max-width:890px) {
+    .container {
+        display: block;
+        margin-top: 20px;
+    }
+}
 
