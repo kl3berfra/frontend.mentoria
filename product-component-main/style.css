@@ -169,7 +169,8 @@ p {
     text-decoration: line-through;
 }
 
-.btn a {
+.btn {
+    background-color: red;
     text-decoration: none;
     color: white;
     position: absolute;
@@ -181,13 +182,18 @@ p {
     font-weight: 700;
     font-size: 0.97rem;
     line-height: 1.0625rem;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.1s;
+    border: 2px solid #2c5f4c;
 }
 
-.btn a:hover {
+.btn > a {
+    color: white; 
+    text-decoration: none;
+}
+
+.btn:hover {
     transition: ease-in-out 0.3s;
-    background-color: var(--cream);
-    color: #3c8067;
-    border-color: #308868fd; 
+    background-color: var(--darkblue);
+    border: 1px solid #1c232b;
     cursor: pointer;
 }
