@@ -26,6 +26,11 @@
 body {
     background-color: var(--Paleblue);
     background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-250px, -450px);
 }
 
 /*-------Config para afastar main--------*/
@@ -162,6 +167,16 @@ body {
 /*------------Mobile--------------*/
 
 @media screen and (max-width:500px) {
+
+    body {
+        background-color: var(--Paleblue);
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: repeat; 
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-250px, -320px);
+    }
 
     .afastar{
         margin-bottom: 20px;
