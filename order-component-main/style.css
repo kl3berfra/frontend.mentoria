@@ -123,11 +123,20 @@ body {
     font-size: 14px;
 }
 
-/*------------------Terceira Div (button)-----------------*/ 
+/*------------------Terceira Div (button) e cancelar-----------------*/ 
 
 .btn-area {
+    height: 50px;
+    width: 75%;
     position: relative;
     margin-top: 50px;
+    margin-left: 60px;
+    border-radius: 10px;
+    border: 0.5px solid #3123cf;
+}
+
+.btn-area:hover {
+    border: 0px solid #3829e0;
 }
 
 .btn-area > .btn-pay {
@@ -138,10 +147,10 @@ body {
     font-size: 14px;
     display: block;
     padding: 10px;
+    border: 0px;
     border-radius: 10px;
-    width: 75%;
+    width: 100%;
     height: 50px;
-    border: none; 
     margin: auto;
     box-shadow: 1px 1px 15px #3829e05d;
 }
@@ -150,15 +159,15 @@ body {
     cursor: pointer;
 }
 
-.btn-area > .cancelar {
+.cancelar {
     display: block;
-    margin-left: 180px;
+    margin-left: 190px;
     color: #7280a7;
     font-size: 14px;
     font-weight: 600;
     font-family: var(--Redhat);
     position: absolute;
-    top: 80px;
+    top: 710px;
 }
 
 .cancelar:hover {
@@ -206,10 +215,13 @@ body {
 
     .btn-area {
         margin-top: 6%;
+        margin-left: 45px;
     }
 
-    .btn-area > .cancelar {
-        margin-left: 134px;
+    .cancelar {
+        margin-left: 135px;
+        position: absolute;
+        top: 545px;
     }    
 
 }
