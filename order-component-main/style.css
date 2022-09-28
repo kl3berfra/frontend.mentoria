@@ -28,35 +28,44 @@ body {
     background-image: url(images/pattern-background-desktop.svg);
 }
 
+/*-------Config para afastar main--------*/
+
+.afastar {
+    background-color: red;
+    margin-bottom: 100px;
+    width: 500px;
+}
+
 /*-----------------Primeira Div-------------*/
 
 .main {
     background-color: white;
-    width: 450px;
-    height: 650px;
-    margin-top: 100px;
-    margin-left: 100px; 
+    width: 400px;
+    height: 600px;
+    margin: auto;
     border-radius: 15px;
-    box-shadow: 2px 2px 20px #e0e8ff;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.346);
 }
 
 .main > .img-main {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    width: 400px;
 }
 
 .main > h2 {
     display: block;
     width: max-content;
     margin: auto;
-    padding-top: 30px;
+    margin-top: 25px;
     font-family: var(--Redhat);
     color: #1f2f56;
     font-weight: 800;
 }
 
 .main > .text {
-    padding-top: 12px;
+    position: relative;
+    top: 15px;
     font-size: 18px;
     color: #7280a7;
     text-align: center;
@@ -65,17 +74,20 @@ body {
 /*-----------------Segunda Div------------------*/ 
 
 .plano {
-    padding-top: 30px;
-    background-color: none; 
+    margin-top: -15px;
+    margin-left: 22px;
+    height: 70px;
+    width: 100%; 
+    padding: 1px;
+    background-color: #e0e8ff3e;
 }
 
 .plano > h2 {
-    width: max-content;
     color: #1f2f56;
     display: block;
-    margin-left: 140px;
-    position: absolute;
-    top: 495px;
+    margin-left: 90px;
+    position: relative;
+    top: -55px;
     font-size: 16px;
     font-family: var(--Redhat);
     font-weight: 800;
@@ -83,23 +95,22 @@ body {
 
 .plano > p {
     color: #7280a7;
-    width: max-content;
     font-family: var(--Redhat);
     display: block;
-    margin-left: 140px;
-    position: absolute;
-    top: 525px;
+    margin-left: 90px;
+    position: relative;
+    top: -50px;
 }
 
 .plano > .icon-music {
-    margin-left: 70px;
+    margin-left: 20px;
 } 
 
 .plano > a {
     display: block;
-    margin-left: 320px;
-    position: absolute;
-    top: 510px;
+    margin-left: 270px;
+    position: relative;
+    top: -75px;
     color: #3829e0;
     font-family: var(--Redhat);
     font-weight: 600;
@@ -109,41 +120,72 @@ body {
 /*------------------Terceira Div (button)-----------------*/ 
 
 .btn-area {
-    margin-top: 50px;
+    position: relative;
+    margin-top: 20px;
 }
 
 .btn-area > .btn-pay {
     background-color: #3829e0;
     color: #e0e8ff;
     font-family: var(--Redhat);
-    font-weight: 800;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 14px;
     display: block;
     padding: 10px;
     border-radius: 10px;
     width: 75%;
-    height: 45px;
+    height: 50px;
     border: none; 
     margin: auto;
-    box-shadow: 1px 1px 15px #3829e0;
+    box-shadow: 1px 1px 15px #3829e05d;
 }
 
 .btn-pay:hover {
     cursor: pointer;
 }
 
-/*-----------Ultima div-------------*/ 
-
-div > .cancelar {
+.btn-area > .cancelar {
     display: block;
-    padding-top: 35px;
-    margin-left: 182px;
+    margin-left: 156px;
     color: #7280a7;
     font-size: 14px;
     font-weight: 600;
     font-family: var(--Redhat);
+    position: absolute;
+    top: 80px;
 }
 
 .cancelar:hover {
     cursor: pointer;
+}
+
+/*------------Mobile--------------*/
+
+@media screen and (max-width:500px) {
+
+    .afastar{
+        margin-bottom: 20px;
+    }
+
+    .main {
+        width: 350px;
+        height: 580px;
+    }
+
+    .main > .img-main {
+        width: 350px;
+    }
+
+    .main > .text {
+        font-size: 16px
+    }
+
+    .plano > a {
+        margin-left: 240px;
+    }
+
+    .btn-area > .cancelar {
+        margin-left: 134px;
+    }    
+
 }
