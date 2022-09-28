@@ -45,8 +45,8 @@ body {
 
 .main {
     background-color: white;
-    width: 400px;
-    height: 600px;
+    width: 450px;
+    height: 680px;
     margin: auto;
     border-radius: 15px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.346);
@@ -55,7 +55,7 @@ body {
 .main > .img-main {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    width: 400px;
+    width: 450px;
 }
 
 .main > h2 {
@@ -69,8 +69,9 @@ body {
 }
 
 .main > .text {
-    position: relative;
-    top: 15px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
     font-size: 18px;
     color: #7280a7;
     text-align: center;
@@ -80,7 +81,7 @@ body {
 
 .plano {
     margin-top: -15px;
-    margin-left: 22px;
+    margin-left: 55px;
     height: 70px;
     width: 100%; 
     padding: 1px;
@@ -126,7 +127,7 @@ body {
 
 .btn-area {
     position: relative;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .btn-area > .btn-pay {
@@ -151,7 +152,7 @@ body {
 
 .btn-area > .cancelar {
     display: block;
-    margin-left: 156px;
+    margin-left: 180px;
     color: #7280a7;
     font-size: 14px;
     font-weight: 600;
@@ -195,8 +196,16 @@ body {
         font-size: 16px
     }
 
+    .plano {
+        margin-left: 20px;
+    }
+
     .plano > a {
         margin-left: 240px;
+    }
+
+    .btn-area {
+        margin-top: 6%;
     }
 
     .btn-area > .cancelar {
