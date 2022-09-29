@@ -17,8 +17,8 @@
 
     /*neutral*/
     --darkblue: #1c232b; 
-    --grayishblue: #6c7289f4; 
-    --white: #ffffff; 
+    --grayishblue: #44495e; 
+    --white: #e7e6e6; 
 
     /*typgraphy*/
     --font-mont: 'Montserrat', sans-serif;
@@ -31,7 +31,7 @@ body {
     max-height: 100vh;
     max-width: 100vw;
     font-family: 'Montserrat', sans-serif;
-    background-color: #1d3e32;
+    background-color: #0d241b;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -196,7 +196,6 @@ p {
 }
 
 .btn {
-    background-color: red;
     text-decoration: none;
     color: white;
     position: absolute;
@@ -209,7 +208,6 @@ p {
     font-size: 0.97rem;
     line-height: 1.0625rem;
     transition: ease-in-out 0.1s;
-    border: 2px solid #2c5f4c;
 }
 
 .btn > a {
@@ -219,7 +217,6 @@ p {
 
 .btn:hover {
     transition: ease-in-out 0.3s;
-    background-color: var(--darkblue);
-    border: 1px solid #1c232b;
+    background-color: #0d241b;
     cursor: pointer;
 }
