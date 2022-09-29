@@ -50,6 +50,13 @@ body {
     margin: auto;
     border-radius: 15px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.346);
+    transition: ease-in-out 0.7s;
+}
+
+.main:hover {
+        transition: ease-in-out 1.0s;
+        transform: scale(0.97);
+    }
 }
 
 .main > .img-main {
@@ -173,8 +180,8 @@ body {
     font-size: 14px;
     font-weight: 600;
     font-family: var(--Redhat);
-    position: absolute;
-    top: 710px;
+    position: relative;
+    top: 30px;
 }
 
 .cancelar:hover {
@@ -228,8 +235,8 @@ body {
 
     .cancelar {
         margin-left: 135px;
-        position: absolute;
-        top: 545px;
+        position: relative;
+        top: 30px;
     }    
 
 }
