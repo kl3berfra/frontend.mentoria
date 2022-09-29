@@ -58,7 +58,7 @@ body {
     width: 450px;
 }
 
-.main > h2 {
+.main > h1 {
     display: block;
     width: max-content;
     margin: auto;
@@ -81,11 +81,12 @@ body {
 
 .plano {
     margin-top: -15px;
-    margin-left: 55px;
-    height: 70px;
-    width: 100%; 
+    margin-left: 58px;
+    border-radius: 10px;
+    height: 55px;
+    width: 76%; 
     padding: 1px;
-    background-color: #e0e8ff3e;
+    background-color: #b7c3e92c;
 }
 
 .plano > h2 {
@@ -93,7 +94,7 @@ body {
     display: block;
     margin-left: 90px;
     position: relative;
-    top: -55px;
+    top: -50px;
     font-size: 16px;
     font-family: var(--Redhat);
     font-weight: 800;
@@ -105,14 +106,16 @@ body {
     display: block;
     margin-left: 90px;
     position: relative;
-    top: -50px;
+    top: -45px;
 }
 
 .plano > .icon-music {
     margin-left: 20px;
+    padding-top: 5px;
 } 
 
 .plano > a {
+    text-decoration: none;
     display: block;
     margin-left: 270px;
     position: relative;
@@ -121,6 +124,11 @@ body {
     font-family: var(--Redhat);
     font-weight: 600;
     font-size: 14px;
+}
+
+.plano > a:hover {
+    color: #303950;
+    text-decoration: underline;
 }
 
 /*------------------Terceira Div (button) e cancelar-----------------*/ 
@@ -132,15 +140,14 @@ body {
     margin-top: 50px;
     margin-left: 60px;
     border-radius: 10px;
-    border: 0.5px solid #3123cf;
 }
 
-.btn-area:hover {
-    border: 0px solid #3829e0;
+.btn-area > .btn-pay:hover {
+    background-color: #5f6b8b;
 }
 
 .btn-area > .btn-pay {
-    background-color: #3829e0;
+    background-color:#3829e0 ;
     color: #e0e8ff;
     font-family: var(--Redhat);
     font-weight: 600;
@@ -172,6 +179,7 @@ body {
 
 .cancelar:hover {
     cursor: pointer;
+    color: #3829e0;
 }
 
 /*------------Mobile--------------*/
