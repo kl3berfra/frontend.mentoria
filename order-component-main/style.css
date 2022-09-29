@@ -50,16 +50,14 @@ body {
     margin: auto;
     border-radius: 15px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.346);
-    transition: ease-in-out 0.7s;
 }
 
 .main:hover {
         transition: ease-in-out 1.0s;
         transform: scale(0.97);
     }
-}
 
-.main > .img-main {
+.img-main {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 450px;
