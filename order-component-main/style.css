@@ -50,11 +50,13 @@ body {
     margin: auto;
     border-radius: 15px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.346);
+    transition: ease-in-out 0.6s;
+    transform: scale(1);
 }
 
 .main:hover {
         transition: ease-in-out 1.0s;
-        transform: scale(0.97);
+        transform: scale(0.95);
     }
 
 .img-main {
