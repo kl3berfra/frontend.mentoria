@@ -1,0 +1,133 @@
+@charset "UTF-8"; 
+
+@import url(https://fonts.google.com/specimen/Inter);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    /* Primárias */
+    --Verydarkblue: #090b1a;
+    --Darkblue: #1b1938;
+    --Softviolet: #aa5cdb;
+
+    /* Neutro */ 
+    --Slightlywhite: #ffffffbf;
+    --Slightlytransparent: #ffffff99;
+
+    /* Fonte-Family */ 
+    --inter: 'Inter', sans-serif; 
+    --lexend: 'Lexend Deca', sans-serif; 
+}
+
+body {
+    background-color: #090b1a;
+}
+
+/*------------------DIV PRINCIPAL--------------*/ 
+
+.container {
+    background-color: #1b1938;
+    width: 1200px;
+    height: 446px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-600px, -250px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+}
+
+/*-----------Coluna 1------------*/
+.coluna1 > h1 {
+    max-width: 400px ;
+    color: white;
+    font-family: var(--inter);
+    display: block;
+    margin-top: 85px;
+    margin-left: 80px;
+}
+
+.coluna1 > h1 > strong {
+    color: #aa5cdb;
+    max-width:1fr ;
+}
+
+.coluna1 > .about {
+    color: #ffffff99;
+    max-width: 350px;
+    text-align: left;
+    display: block;
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: var(--lexend);
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.coluna1 > .detalhes {
+    color: white;
+    font-family: var(--inter);
+    font-weight: 600;
+    display: inline;
+    position: relative;
+    top: 75px;
+    left: 80px;
+    padding-right: 80px;
+}
+
+.coluna1 > .about-detalhes {
+    color: #ffffff8f;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-family: var(--lexend);
+    max-width: max-content;
+    position: relative;
+    top: 80px;
+    left: 80px;
+}
+
+.coluna1 > .about-detalhes2 {
+    color: #ffffff8f;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-family: var(--lexend);
+    max-width: max-content;
+    position: relative;
+    top: 66px;
+    left: 220px;
+}
+
+.coluna1 > .about-detalhes3 {
+    color: #ffffff8f;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-family: var(--lexend);
+    max-width: max-content;
+    position: relative;
+    top: 52px;
+    left: 345px;
+}
+
+
+/*---------------Coluna 2----------------*/
+.coluna2 {
+    background-image: url(images/image-header-desktop.jpg);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*--------------OVERLAAY------------------*/
+.overlay {
+    background-color: #74349b81;
+    height: 446px;
+}
+
+.overlay:hover {
+    opacity: 0;
+}
