@@ -24,110 +24,119 @@
 }
 
 body {
-    background-color: #090b1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg,#351544 0%,#100020 100%);
+    cursor: pointer;
 }
 
-/*------------------DIV PRINCIPAL--------------*/ 
-
-.container {
-    background-color: #1b1938;
-    width: 1200px;
-    height: 446px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-600px, -250px);
+/*-------------------------------------MAIN----------------------------------*/ 
+main{ 
+    /*Exemplos de colunas nessa div*/
+    margin: 30px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: 5px;
+    border-radius: 14px;
+    box-shadow: 0.75rem 0.75rem 12.5rem 1.25rem rgb(203 12 153 / 22%);
+    background: linear-gradient(to top,hsla(246,38%,16%,.3) 20%,rgb(70,39,98,.5) 90%);
+    padding-left: 150px;
 }
 
-/*-----------Coluna 1------------*/
+/*---------------------------------Coluna 1-----------------------------------*/
+.coluna1 {
+    display: flex;
+    flex-direction: column;
+}
+
 .coluna1 > h1 {
-    max-width: 400px ;
+    font-size: 34px;
     color: white;
     font-family: var(--inter);
     display: block;
-    margin-top: 85px;
-    margin-left: 80px;
+    margin-top: 50px;
+    margin-left: -80px;
+    margin-right: 100px;
 }
 
-.coluna1 > h1 > strong {
+.coluna1 > h1 > span { 
+    /*Usa o Span para marcar uma palavra de um texto separadamente*/
     color: #aa5cdb;
-    max-width:1fr ;
+
+    /*Para colocar o background dentro do texto usa isso aqui -> */ 
+    background-image: linear-gradient(to right,#af5ec3,#ef45b4,#fa747d,#f7a0cf,#ef45b4,#af5ec3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .coluna1 > .about {
     color: #ffffff99;
     max-width: 350px;
     text-align: left;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: -80px;
     display: block;
-    margin-left: 80px;
-    margin-top: 30px;
-    font-size: 16px;
-    font-family: var(--lexend);
-    line-height: 25px;
-    font-weight: 500;
+    font-family: var(--inter);
+    line-height: 30px;
 }
 
-.coluna1 > .detalhes {
-    color: white;
+/*-------------------------------------HIGHLIGHTS------------------------------------*/
+.quantidade {
+    margin-top: 50px;
+    margin-left: -80px;
+    display: flex;
+    gap: 2.5rem;
+    flex-flow: row wrap;
+}
+
+.detalhes {
+    font-size: 34px;
     font-family: var(--inter);
     font-weight: 600;
     display: inline;
-    position: relative;
-    top: 75px;
-    left: 80px;
     padding-right: 80px;
+    background-image: linear-gradient(to right,#af5ec3,#ef45b4,#fa747d,#f7a0cf,#ef45b4,#af5ec3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.coluna1 > .about-detalhes {
-    color: #ffffff8f;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    font-family: var(--lexend);
-    max-width: max-content;
-    position: relative;
-    top: 80px;
-    left: 80px;
-}
-
-.coluna1 > .about-detalhes2 {
-    color: #ffffff8f;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    font-family: var(--lexend);
-    max-width: max-content;
-    position: relative;
-    top: 66px;
-    left: 220px;
-}
-
-.coluna1 > .about-detalhes3 {
-    color: #ffffff8f;
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    font-family: var(--lexend);
-    max-width: max-content;
-    position: relative;
-    top: 52px;
-    left: 345px;
+.about-detalhes {
+    color: var(--Slightlywhite);
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 
-/*---------------Coluna 2----------------*/
+/*-------------------------------------Coluna 2--------------------------------------*/
 .coluna2 {
-    background-image: url(images/image-header-desktop.jpg);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 14px;
 }
 
-/*--------------OVERLAAY------------------*/
-.overlay {
-    background-color: #74349b81;
-    height: 446px;
+.image-desktop {
+    display: block;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
 }
 
-.overlay:hover {
-    opacity: 0;
+picture {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    background: linear-gradient(177deg,#ff61f3 0,#b86ffb 100%);
+    border-bottom-right-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+/*---------------------------------------MOBILE------------------------------------*/
+@media screen and (max-width:1150px) {
+    .container {
+
+    }
 }
