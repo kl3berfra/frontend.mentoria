@@ -32,20 +32,21 @@ body {
     cursor: pointer;
 }
 
-/*-------------------------------------MAIN----------------------------------*/ 
+/*-------------------------------------MAIN----------------------*/ 
 main{ 
     /*Exemplos de colunas nessa div*/
     margin: 30px;
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: 14px;
+    border-radius: 10px;
     box-shadow: 0.75rem 0.75rem 12.5rem 1.25rem rgb(203 12 153 / 22%);
     background: linear-gradient(to top,hsla(246,38%,16%,.3) 20%,rgb(70,39,98,.5) 90%);
     padding-left: 150px;
+    transition: all ease 1.2s;
 }
 
-/*---------------------------------Coluna 1-----------------------------------*/
+/*------------------------------Coluna 1----------------------*/
 .coluna1 {
     display: flex;
     flex-direction: column;
@@ -76,14 +77,14 @@ main{
     max-width: 350px;
     text-align: left;
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: -80px;
     display: block;
     font-family: var(--inter);
     line-height: 30px;
 }
 
-/*-------------------------------------HIGHLIGHTS------------------------------------*/
+/*---------------------------HIGHLIGHTS------------------------*/
 .quantidade {
     margin-top: 50px;
     margin-left: -80px;
@@ -93,7 +94,8 @@ main{
 }
 
 .detalhes {
-    font-size: 34px;
+    width: max-content;
+    font-size: 28px;
     font-family: var(--inter);
     font-weight: 600;
     display: inline;
@@ -110,19 +112,22 @@ main{
     font-weight: 600;
 }
 
-
-/*-------------------------------------Coluna 2--------------------------------------*/
+/*---------------------Coluna2--------------------------------*/
 .coluna2 {
-    border-bottom-right-radius: 14px;
-    border-top-right-radius: 14px;
+    display: flex;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .image-desktop {
-    display: block;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     mix-blend-mode: multiply;
     opacity: 0.8;
+    
 }
 
 picture {
@@ -134,9 +139,119 @@ picture {
     border-top-right-radius: 14px;
 }
 
-/*---------------------------------------MOBILE------------------------------------*/
-@media screen and (max-width:1150px) {
-    .container {
-
+/*----------------------------MOBILE----------------------------*/
+@media screen and (max-width:1135px) {
+    .detalhes {
+        font-size: 24px;
     }
+
+    .coluna1 > h1 {
+        font-size: 28px;
+    }
+
+    .coluna1 > .about {
+        font-size:16px ;
+    }
+
+    .quantidade {
+        margin-top: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .detalhes {
+        font-size: 20px;
+    }
+
+    .coluna1 > h1 {
+        font-size: 26px;
+    }
+
+    .coluna1 > .about {
+        font-size:16px ;
+        margin-top: 10px;
+    }
+
+    .quantidade {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .detalhes {
+        font-size: 14px;
+       
+    }
+
+    .coluna1 > h1 {
+        font-size: 26px;
+        margin-left: -110px;
+    }
+
+    .coluna1 > .about {
+        font-size:16px ;
+        margin-left: -110px;
+        margin-top: 10px;
+    }
+
+    .quantidade {
+        margin-left: -110px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:826px) {
+    .detalhes {
+        font-size: 13px;   
+    }
+
+    .coluna1 > h1 {
+        font-size: 26px;
+        margin-left: -110px;
+    }
+
+    .coluna1 > .about {
+        
+        font-size:14px ;
+        margin-left: -110px;
+        margin-top: 10px;
+    }
+
+    .quantidade {
+        margin-left: -110px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:825px) {
+    main {
+        width: 500px;
+        height: 850px;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr;
+        -webkit-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        padding: 0%;
+    }
+
+    .coluna1 {
+     
+    }
+
+    .coluna2 {
+        height: 400px;
+        width: 100%;
+        
+
+        
+    }
+
+   .image-desktop {
+    border-radius: 0%;
+    
 }
