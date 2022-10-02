@@ -100,9 +100,7 @@ main{
     font-weight: 600;
     display: inline;
     padding-right: 80px;
-    background-image: linear-gradient(to right,#af5ec3,#ef45b4,#fa747d,#f7a0cf,#ef45b4,#af5ec3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ee3fb1;
 }
 
 .about-detalhes {
@@ -232,10 +230,7 @@ picture {
         width: 500px;
         height: 850px;
         display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: 1fr 1fr;
-        -webkit-flex-direction: row-reverse;
-        flex-direction: row-reverse;
+        grid-area: ;
         padding: 0%;
     }
 
