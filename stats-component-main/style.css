@@ -28,7 +28,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(180deg,#351544 0%,#100020 100%);
+    background-color: #0e0d1c;
     cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 10px;
-    box-shadow: 0.75rem 0.75rem 12.5rem 1.25rem rgb(203 12 153 / 22%);
+    box-shadow: 0.75rem 0.75rem 12.5rem 1.25rem rgba(203, 12, 152, 0.157);
     background: linear-gradient(to top,hsla(246,38%,16%,.3) 20%,rgb(70,39,98,.5) 90%);
     padding-left: 150px;
     transition: all ease 1.2s;
