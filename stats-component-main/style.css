@@ -272,6 +272,7 @@ picture {
     padding-top: 20px;
     font-size: 20px;
     line-height: 40px; 
+    
    }
 
    .coluna1 > .quantidade {
@@ -327,16 +328,19 @@ picture {
    }
 
    .coluna1 > h1 {
-    font-size: 34px;
+    font-size: 36px;
     max-width: 400px;
     
    }
 
    .coluna1 > .about {
     text-align: center;
-    width: 400px;
+    width: 350px;
     padding-top: 20px;
-    font-size: 20px;
+    margin-left: -85px ;
+    position: relative;
+    top: 15px;
+    font-size: 18px;
     line-height: 30px; 
    }
 
