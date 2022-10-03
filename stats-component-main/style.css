@@ -24,18 +24,20 @@
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     min-height: 100vh;
-    background-color: #0e0d1c;
+    margin-top: 250px;
+    background-color: #000000;
     cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-550px, -500px)
 }
 
 /*-------------------------------------MAIN----------------------*/ 
 main{ 
     /*Exemplos de colunas nessa div*/
-    margin: 30px;
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -89,8 +91,8 @@ main{
     margin-top: 50px;
     margin-left: -80px;
     display: flex;
-    gap: 2.5rem;
-    flex-flow: row wrap;
+    gap: 2.0rem;
+    padding-bottom: 40px;
 }
 
 .detalhes {
@@ -138,7 +140,18 @@ picture {
 }
 
 /*----------------------------MOBILE----------------------------*/
-@media screen and (max-width:1135px) {
+@media screen and (max-width:1145px) {
+    body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-500px, -500px);
+    }
+
+    main {
+        width: 800px;
+    }
+
     .detalhes {
         font-size: 24px;
     }
@@ -158,6 +171,13 @@ picture {
 }
 
 @media screen and (max-width:1000px) {
+    body {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-500px, -440px)
+        }
+
     .detalhes {
         font-size: 20px;
     }
@@ -178,6 +198,17 @@ picture {
 }
 
 @media screen and (max-width:930px) {
+    body {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-450px, -460px)
+        }
+
+    main {
+        width: 720px;
+        }
+
     .detalhes {
         font-size: 14px;
        
@@ -201,9 +232,21 @@ picture {
     }
 }
 
-@media screen and (max-width:826px) {
+@media screen and (max-width:896px) {
+    body {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-450px, -550px)
+        }
+
+    main {
+        width: 680px;
+        }
+
     .detalhes {
-        font-size: 13px;   
+        font-size: 14px;
+       
     }
 
     .coluna1 > h1 {
@@ -212,8 +255,7 @@ picture {
     }
 
     .coluna1 > .about {
-        
-        font-size:14px ;
+        font-size:16px ;
         margin-left: -110px;
         margin-top: 10px;
     }
@@ -225,8 +267,17 @@ picture {
     }
 }
 
-@media screen and (max-width:825px) {
+@media screen and (max-width:867px) {
+    body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-400px, -450px)
+    }
+
     main {
+    margin: 0%;
+    width: 70%;
     height: 850px;
     display: grid;
     grid-template-columns: 1fr;
@@ -236,16 +287,98 @@ picture {
 
     .coluna1 {
     position: relative;
-    top: 380px;
-    left: 160px;
+    top: 400px;
+    left: 200px;
     text-align: center;
     }
 
     .coluna2 {
     position: relative;
-    top: -476px;
+    top: -424px;
     height: 400px;
-    width: 500px;        
+    width: 100%;        
+    }
+
+   picture{
+    width: 100%;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   }
+
+   picture > .image-desktop {
+    width: 100%;
+    background-size: cover;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   }
+
+   .coluna1 > h1 {
+    font-size: 38px;
+    max-width: 400px;
+    
+   }
+
+   .coluna1 > .about {
+    text-align: center;
+    width: 400px;
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 30px; 
+    
+   }
+
+   .coluna1 > .quantidade {
+    gap: 2.0rem;
+    width: max-content;
+    margin-left: -110px;
+    position: relative;
+    top: 15px;
+   }
+
+   div > .detalhes {
+    padding: 0%;
+    width: max-content;
+    font-size: 30px;
+    margin-left: -2px;
+
+   }
+
+   div > .about-detalhes {
+    font-size: 18px;
+   }
+
+@media screen and (max-width:825px) {
+    body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-400px, -450px)
+    }
+
+    main {
+    margin: 0%;
+    width: 66%;
+    height: 850px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0%;
+    }
+
+    .coluna1 {
+    position: relative;
+    top: 400px;
+    left: 180px;
+    text-align: center;
+    }
+
+    .coluna2 {
+    position: relative;
+    top: -424px;
+    height: 400px;
+    width: 100%;        
     }
 
    picture{
@@ -255,6 +388,7 @@ picture {
    }
 
    picture > .image-desktop {
+    background-size: cover;
     border-bottom-right-radius: 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -271,13 +405,14 @@ picture {
     width: 400px;
     padding-top: 20px;
     font-size: 20px;
-    line-height: 40px; 
+    line-height: 30px; 
     
    }
 
    .coluna1 > .quantidade {
+    gap: 2.0rem;
     width: max-content;
-    margin-left: -105px;
+    margin-left: -90px;
     position: relative;
     top: 30px;
    }
@@ -285,11 +420,12 @@ picture {
    div > .detalhes {
     padding: 0%;
     width: max-content;
-    font-size: 38px;
+    font-size: 30px;
    }
 
    div > .about-detalhes {
     display: flex;
+    font-size: 16px;
    }
 
    @media screen and (max-width:520px) {
@@ -324,6 +460,7 @@ picture {
    }
 
    picture > .image-desktop {
+    background-size: cover;
     border-bottom-right-radius: 0px;
    }
 
