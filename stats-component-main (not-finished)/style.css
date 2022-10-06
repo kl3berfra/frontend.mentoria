@@ -151,3 +151,40 @@ main {
         border-radius: 10px 10px 0px 0px;
     }
 
+@media screen and (max-width:430px) {
+    body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-200px, -350px)
+    }
+
+   main {
+    width: 400px;
+    height: 700px;
+    }
+
+    .contain-l > h1 {
+        width: 320px;
+        text-align: center;
+        margin-left: 4px;
+        margin-top: 30px;
+    }
+
+    .contain-l > .sobre {
+        align-items: center;
+        text-align:center;
+        width: 350px;
+        margin-left: -10px;
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .contain-l > .highlights {
+        font-size: 12px;
+        width: max-content;
+        margin-top:40px;
+        margin-left: 22px;
+        gap: 20px;
+    }
+}
