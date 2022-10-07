@@ -147,7 +147,7 @@ body {
 }
 
 .mentoria {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.836);
     border-radius: 2px;
     width: max-content;
     height: 38px;
