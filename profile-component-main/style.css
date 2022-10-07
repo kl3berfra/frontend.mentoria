@@ -1,0 +1,29 @@
+@charset "UTF-8"; 
+
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+:root {
+    /* Primárias */
+    --darkcyan:    rgb(25, 162, 174);
+    --darkblue:    hsl(229, 23%, 23%);
+    --grayishblue: hsl(227, 10%, 46%);
+
+    /* Neutro */ 
+    --darkgray: hsl(0, 0%, 59%);
+
+    /* Fonte-Family */ 
+    --family: 'Kumbh', sans-serif; 
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--darkcyan);
+    background-image: url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 300px;
+}
