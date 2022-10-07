@@ -95,7 +95,7 @@ body {
 
 .redes-sociais {
     width: 65%;
-    margin-left: 70px;
+    margin-left: 45px;
 }
 
 .linkedin{
@@ -105,7 +105,7 @@ body {
     cursor: pointer;
 }
 
-.linkedin > img {
+.linkedin img {
     width: 38px;
     height: 38px;
 }
@@ -116,7 +116,7 @@ body {
     margin-left: 80px;
 }
 
-.twitter > img { 
+.twitter  img { 
    
     width: 38px;
     height: 38px;
@@ -128,7 +128,7 @@ body {
     margin-top: -42px;
 }
 
-.github > img {
+.github img {
     width: 38px;
     height: 38px;
 }
@@ -139,9 +139,23 @@ body {
     margin-top: -42px;
 }
 
-.curriculo > img {
+.curriculo img {
     width: 38px;
     height: 38px;
+}
+
+.mentoria {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: black;
+    border-radius: 3px;
+    padding: 1px;
+    width: max-content;
+    margin-left: 228px;
+    margin-top: -43px;
+}
+
+.mentoria > img {
+    width: 38px;
 }
 
 img:hover {
