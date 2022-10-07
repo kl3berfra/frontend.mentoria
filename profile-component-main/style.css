@@ -103,7 +103,8 @@ body {
 .linkedin{
     margin-top: 20px;
     margin-left: 30px;
-    width: max-content;
+    width: 100%;
+    height: 38px;
     cursor: pointer;
 }
 
@@ -114,12 +115,11 @@ body {
 
 .twitter {
     width: max-content;
-    margin-top: -41px; 
+    margin-top: -38px; 
     margin-left: 80px;
 }
 
 .twitter  img { 
-   
     width: 38px;
     height: 38px;
 }
@@ -147,13 +147,12 @@ body {
 }
 
 .mentoria {
-    border: 1px solid rgb(0, 0, 0);
     background-color: black;
-    border-radius: 3px;
-    padding: 1px;
+    border-radius: 2px;
     width: max-content;
+    height: 38px;
     margin-left: 228px;
-    margin-top: -43px;
+    margin-top: -42px;
 }
 
 .mentoria > img {
