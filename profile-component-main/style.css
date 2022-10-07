@@ -21,7 +21,8 @@
 }
 
 body {
-    background-image: url(images/bg-3.jpg);
+    background: url(images/bg-3.jpg) no-repeat center fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
