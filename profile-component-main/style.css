@@ -71,7 +71,8 @@ body {
     width: max-content;
     margin-left: 130px;
     margin-top: -40px;
-    font-weight: 600;
+    color: rgba(0, 0, 0, 0.699);
+    font-weight: 800;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -172,11 +173,15 @@ img:hover {
     width: 340px;
     }
 
+    .sobre-mim > .name-age {
+        margin-left: 105px;
+    }
+
     .sobre-mim > .nacionalidade {
-        margin-left: 165px;
+        margin-left: 150px;
     }
 
     .redes-sociais {
-        margin-left: 25px;
+        margin-left: 23px;
     }
 }
