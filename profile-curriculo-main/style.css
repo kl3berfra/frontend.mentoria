@@ -10,9 +10,10 @@ body {
 }
 
 .container-l {
+    display: block;
     background-color: grey;
-    max-width:350px;
-    width: 350px;
+    max-width:500px;
+    width: 500px;
     height: 100vh; 
 }
 
@@ -22,11 +23,12 @@ body {
     border-radius: 50%;
     border: 4px solid white;
     position: absolute;
-    left: 105px;
+    left: 165px;
     top: 20px;
 }
 
 .container-l .kleber-img {
+    position: absolute;
     object-fit: cover;
     width: 150px;
     height: 150px;
@@ -44,7 +46,7 @@ body {
 }
 
 .container-l > .sobre > .line {
-    width: 300px;
+    width: 450px;
     height: 1px;
     background-color: white;
     position: absolute;
@@ -57,26 +59,191 @@ body {
     position: absolute;
     top: 250px;
     left: 50px;
-    width: 290px;
+    width: 400px;
     text-align: justify;
 }
 
 /* CONTATO */
+.contato {
+    background-color: red;
+}
 
 .container-l > .contato > h4{
     color: white;
     position: absolute;
-    top: 420px;
+    top: 450px;
     left: 50px;
     letter-spacing: 5px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container-l > .contato > .line {
-    width: 300px;
+    width: 450px;
     height: 1px;
     background-color: white;
     position: absolute;
-    top: 450px;
+    top: 480px;
     left: 50px;
+}
+
+/* LOGOS DO CONTATO */
+.container-l > .contato > .casa .logos {
+    width: 30px;
+    max-width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 510px;
+    left: 50px;
+}
+
+.container-l > .contato > .casa p {
+    color: white;
+    font-size: 15px;
+    width: max-content;
+    position: absolute;
+    top: 520px;
+    left: 90px;
+}
+
+.container-l > .contato > .celular .logos {
+    max-width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 570px;
+    left: 50px;
+}
+
+.container-l > .contato > .celular p {
+    color: white;
+    font-size: 15px;
+    width: max-content;
+    position: absolute;
+    top: 580px;
+    left: 90px;
+}
+
+.container-l > .contato > .email .logos {
+    max-width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 630px;
+    left: 50px;
+}
+
+.container-l > .contato > .email p {
+    color: white;
+    font-size: 15px;
+    width: max-content;
+    position: absolute;
+    top: 639px;
+    left: 90px;
+}
+
+/* HABILIDADES */
+.container-l > .habilidades > h4 {
+    color: white;
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    letter-spacing: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-l > .habilidades > .line {
+    width: 450px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 730px;
+    left: 50px;
+}
+
+.container-l > .habilidades > .hab-one {
+    color: white;
+    position: absolute;
+    top: 750px;
+    left: 50px;
+}
+
+.container-l > .habilidades > .hab-two {
+    color: white;
+    position: absolute;
+    top: 780px;
+    left: 50px;
+}
+
+.container-l > .habilidades > .hab-three {
+    color: white;
+    position: absolute;
+    top: 810px;
+    left: 50px;
+}
+
+.container-l > .habilidades > .hab-four {
+    color: white;
+    position: absolute;
+    top: 840px;
+    left: 50px;
+}
+
+.container-l > .habilidades > .hab-five {
+    color: white;
+    position: absolute;
+    top: 870px;
+    left: 50px;
+}
+
+/* VALORES DAS HABILIDADES */
+.teste {
+    width: 100px;
+    height: 10px;
+    background-color: #c5b0b0;
+    position: absolute;
+    left: 140px;
+    top: 3.5px;
+}
+
+.hab-one > .teste-2 {
+    width: 45px;
+    height: 10px;
+    background-color: #2b2828;
+    position: absolute;
+    left: 140px;
+    top: 3.5px;
+}
+
+.hab-two > .teste-2 {
+    width: 45px;
+    height: 10px;
+    background-color: #2b2828;
+    position: absolute;
+    left: 140px;
+    top: 3.5px;
+}
+
+.hab-three > .teste-2 {
+    width: 65px;
+    height: 10px;
+    background-color: #2b2828;
+    position: absolute;
+    left: 140px;
+    top: 3.5px;
+}
+
+.hab-four > .teste-2 {
+    width: 65px;
+    height: 10px;
+    background-color: #2b2828;
+    position: absolute;
+    left: 140px;
+    top: 3.5px;
+}
+
+.hab-five > .teste-2 {
+    width: 55px;
+    height: 10px;
+    background-color: #2b2828;
+    position: absolute;
+    left: 140px;
+    top: 3.5px;
 }
