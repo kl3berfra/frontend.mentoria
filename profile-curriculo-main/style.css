@@ -12,7 +12,6 @@ body {
 .container-l {
     display: block;
     background-color: #10403B;
-    max-width:500px;
     width: 500px;
     height: 100vh; 
 }
@@ -249,8 +248,9 @@ body {
 /* CONTAINER-R */
 
 .container-r {
-    background-color: #eae5e581;
-    width: 1400px;
+    position: absolute;
+    background-color: #faf9f981;
+    width: 1420px;
     height: 100vh; 
     margin-left: 500px;
     margin-top: -929px;
@@ -291,7 +291,7 @@ body {
     color: #10403B;
     width: max-content;
     position: absolute;
-    left: 1070px;
+    left: 550px;
     top: 160px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 2px;
@@ -305,14 +305,13 @@ body {
     background-color: #9b9d9d;
     position: absolute;
     top: 200px;
-    left: 800px;
+    left: 280px;
 }
 
 .detalhes-experiencia {
-    
     position: absolute;
     top: 220px;
-    left: 865px;
+    left: 350px;
     height: 110px;
 }
 
@@ -339,7 +338,7 @@ body {
     color: #10403B;
     width: max-content;
     position: absolute;
-    left: 1070px;
+    left: 550px;
     top: 400px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 2px;
@@ -353,13 +352,13 @@ body {
     background-color: #9b9d9d;
     position: absolute;
     top: 440px;
-    left: 800px;
+    left: 280px;;
 }
 
 .detalhes-formação {
     position: absolute;
     top: 460px;
-    left: 865px;
+    left: 350px;
     height: 110px;
     width:600px;
 }
@@ -393,7 +392,7 @@ body {
     color: #10403B;
     width: max-content;
     position: absolute;
-    left: 1070px;
+    left: 550px;
     top: 670px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 2px;
@@ -407,15 +406,14 @@ body {
     background-color: #9b9d9d;
     position: absolute;
     top: 710px;
-    left: 800px;
+    left: 280px;
 }
 
 .detalhes-linguas {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: absolute;
     top: 725px;
-    left: 865px;
-    height: 110px;
+    left: 350px;
     width:600px;
 }
 
@@ -426,7 +424,7 @@ body {
 .teste-r {
     position: absolute;
     top: 740px;
-    left: 1000px;
+    left: 500px;
     background-color: #a3a0a0;
     width: 400px;
     height: 3px;
@@ -435,8 +433,229 @@ body {
 .teste-english {
     position: absolute;
     top: 740px;
-    left: 1000px;
+    left: 500px;
     background-color: #10403B;
     width: 200px;
     height: 3px;
 }
+
+@media screen and (max-width: 1280px) {
+    .container-l {
+        width: 600px;
+        height: 100vh; 
+    }
+
+    .container-l > .circulo {
+        width: 30px;
+        height: 40px; 
+        background-color: #10403B;
+        border: 1px solid #10403B;
+    }
+    
+    .container-l .kleber-img {
+        position: absolute;
+        object-fit: cover;
+        width: 0px;
+        height: 0px;
+        background-color: #10403B;
+    }
+
+    .container-l > .sobre > h4 {
+        color: white;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        letter-spacing: 5px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .container-l > .sobre > .line {
+        width: 450px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 50px;
+    }
+    
+    .container-l > .sobre > p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        position: absolute;
+        top: 70px;
+        font-size: 15px;
+        left: 50px;
+        width: 400px;
+        text-align: justify;
+    }
+    
+    /* CONTATO */
+    .container-l > .contato > h4{
+        color: white;
+        position: absolute;
+        top: 290px;
+        left: 50px;
+        letter-spacing: 5px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .container-l > .contato > .line {
+        width: 450px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 320px;
+        left: 50px;
+    }
+    
+    /* LOGOS DO CONTATO */
+    .container-l > .contato > .casa .logos {
+        width: 30px;
+        max-width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 340px;
+        left: 50px;
+    }
+    
+    .container-l > .contato > .casa p {
+        color: white;
+        font-size: 15px;
+        width: max-content;
+        position: absolute;
+        top: 350px;
+        left: 90px;
+    }
+    
+    .container-l > .contato > .celular .logos {
+        max-width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 390px;
+        left: 50px;
+    }
+    
+    .container-l > .contato > .celular p {
+        color: white;
+        font-size: 15px;
+        width: max-content;
+        position: absolute;
+        top: 400px;
+        left: 90px;
+    }
+    
+    .container-l > .contato > .email .logos {
+        max-width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 440px;
+        left: 50px;
+    }
+    
+    .container-l > .contato > .email p {
+        color: white;
+        font-size: 15px;
+        width: max-content;
+        position: absolute;
+        top: 447px;
+        left: 90px;
+    }
+    
+    /* HABILIDADES */
+    .container-l > .habilidades > h4 {
+        color: white;
+        position: absolute;
+        top: 500px;
+        left: 50px;
+        letter-spacing: 5px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .container-l > .habilidades > .line {
+        width: 450px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 530px;
+        left: 50px;
+    }
+    
+    .container-l > .habilidades > .hab-one {
+        color: white;
+        position: absolute;
+        top: 550px;
+        left: 50px;
+    }
+    
+    .container-l > .habilidades > .hab-two {
+        color: white;
+        position: absolute;
+        top: 580px;
+        left: 50px;
+    }
+    
+    .container-l > .habilidades > .hab-three {
+        color: white;
+        position: absolute;
+        top: 610px;
+        left: 50px;
+    }
+    
+    .container-l > .habilidades > .hab-four {
+        color: white;
+        position: absolute;
+        top: 640px;
+        left: 50px;
+    }
+    
+    .container-l > .habilidades > .hab-five {
+        color: white;
+        position: absolute;
+        top: 670px;
+        left: 50px;
+    }
+
+        /* Container R */
+
+    .container-r {
+        width: 0px;
+        height: 97.5%; 
+        margin-left: 320px;
+        margin-top: -780px;
+    }
+
+    .caixa-titulo {
+        width: 400px;
+        margin-left: 290px;
+        margin-top: 40px;
+    }
+
+    .titulo, .cargo {
+        left: 0%;
+    }
+
+    .linguas-titulo, .formação-titulo, .experiencia-titulo {
+       margin-left: -250px;
+    }
+
+    .detalhes-formação, .detalhes-experiencia {
+        margin-left: -50px;
+    }
+
+    .detalhes-linguas {
+        margin-left: -50px;
+        width: max-content;
+        height: max-content;
+    }
+
+    .teste-english {
+        margin-left: -100px;
+    }
+
+    .teste-r {
+        width: 280px;
+    }
+
+    .line1, .line2, .line3 {
+        width: 500px;
+    }
