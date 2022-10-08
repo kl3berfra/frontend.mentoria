@@ -11,7 +11,7 @@ body {
 
 .container-l {
     display: block;
-    background-color: rgba(5, 5, 131, 0.926);
+    background-color: #10403B;
     max-width:500px;
     width: 500px;
     height: 100vh; 
@@ -195,7 +195,7 @@ body {
 .teste {
     width: 100px;
     height: 10px;
-    background-color: #c5b0b0;
+    background-color: #F2F2F2;
     position: absolute;
     left: 140px;
     top: 3.5px;
@@ -204,7 +204,7 @@ body {
 .hab-one > .teste-2 {
     width: 45px;
     height: 10px;
-    background-color: #038b8f;
+    background-color: #127369;
     position: absolute;
     left: 140px;
     top: 3.5px;
@@ -213,7 +213,7 @@ body {
 .hab-two > .teste-2 {
     width: 45px;
     height: 10px;
-    background-color: #038b8f;
+    background-color: #127369;
     position: absolute;
     left: 140px;
     top: 3.5px;
@@ -222,7 +222,7 @@ body {
 .hab-three > .teste-2 {
     width: 65px;
     height: 10px;
-    background-color: #038b8f;
+    background-color: #127369;
     position: absolute;
     left: 140px;
     top: 3.5px;
@@ -231,7 +231,7 @@ body {
 .hab-four > .teste-2 {
     width: 65px;
     height: 10px;
-    background-color: #038b8f;
+    background-color: #127369;
     position: absolute;
     left: 140px;
     top: 3.5px;
@@ -240,7 +240,7 @@ body {
 .hab-five > .teste-2 {
     width: 55px;
     height: 10px;
-    background-color: #038b8f;
+    background-color: #127369;
     position: absolute;
     left: 140px;
     top: 3.5px;
@@ -249,8 +249,7 @@ body {
 /* CONTAINER-R */
 
 .container-r {
-    background: rgb(244,244,244);
-    background: linear-gradient(138deg, rgba(244,244,244,1) 46%, rgba(209,212,236,1) 88%, rgba(167,171,200,0.9612219887955182) 100%);
+    background-color: #eae5e581;
     width: 1400px;
     height: 100vh; 
     margin-left: 500px;
@@ -258,7 +257,7 @@ body {
 }
 
 .caixa-titulo {
-    background-color: #ffffffe2;
+    background-color: #dadfdf06;
     position: absolute;
     margin-left: 400px;
     margin-top: 20px;
@@ -270,7 +269,7 @@ body {
     width: max-content;
     font-size: 36px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: darkblue;
+    color: #10403B;
     font-weight: 700;
     letter-spacing: 4px;
     position: absolute;
@@ -279,7 +278,7 @@ body {
 }
 
 .cargo {
-    color: rgba(0, 0, 139, 0.772);
+    color: #8AA6A3;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: absolute;
@@ -289,7 +288,7 @@ body {
 }
 
 .experiencia-titulo {
-    color: #000000;
+    color: #10403B;
     width: max-content;
     position: absolute;
     left: 1070px;
@@ -303,7 +302,7 @@ body {
 .line1 {
     width: 700px;
     height: 2px;
-    background-color: #5d595965;
+    background-color: #9b9d9d;
     position: absolute;
     top: 200px;
     left: 800px;
@@ -337,7 +336,7 @@ body {
 }
 
 .formação-titulo {
-    color: #000000;
+    color: #10403B;
     width: max-content;
     position: absolute;
     left: 1070px;
@@ -351,7 +350,7 @@ body {
 .line2 {
     width: 700px;
     height: 2px;
-    background-color: #5d595965;
+    background-color: #9b9d9d;
     position: absolute;
     top: 440px;
     left: 800px;
@@ -391,7 +390,7 @@ body {
 }
 
 .linguas-titulo {
-    color: #000000;
+    color: #10403B;
     width: max-content;
     position: absolute;
     left: 1070px;
@@ -405,7 +404,7 @@ body {
 .line3 {
     width: 700px;
     height: 2px;
-    background-color: #5d595965;
+    background-color: #9b9d9d;
     position: absolute;
     top: 710px;
     left: 800px;
@@ -428,7 +427,7 @@ body {
     position: absolute;
     top: 740px;
     left: 1000px;
-    background-color: grey;
+    background-color: #a3a0a0;
     width: 400px;
     height: 3px;
 }
@@ -437,7 +436,7 @@ body {
     position: absolute;
     top: 740px;
     left: 1000px;
-    background-color: black;
+    background-color: #10403B;
     width: 200px;
     height: 3px;
 }
