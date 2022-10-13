@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 body {
-background-color: #c4b498;
+background-color: rgb(5, 4, 4);
 }
 
 .container-geral {
@@ -16,7 +16,7 @@ background-color: #c4b498;
     justify-content: center;
     margin-left: 25%;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px #d8c29a;
+    box-shadow: 2px 2px 10px #f0f0f0;
 }
 /* ------------CONTEUDO 1 --------- */
 .conteudo1 {
@@ -191,10 +191,135 @@ h1 {
 }
 
 .conteudo2 .linha-horizontal {
-    width: 80%;
+    width: 90%;
     height: 2px;
     background-color: black;
-    margin-left: 12.5%;
+    margin-left: 5.5%;
     margin-top: 5%;
 }
+
+/* ----------CONTEUDO 3------------ */
+.conteudo3 {
+    width: auto;
+}
+/* ----------LADO ESQUERDO------------ */
+.lado-esquerdo {
+    background-color: blue;
+    max-width: 50%;
+}
+
+.habilidades {
+    background-color: green;
+    max-width: 100%;
+}
+
+.habilidades h2 {
+    background-color: yellow;
+    max-width: 50%;
+    width: auto;
+    letter-spacing: 4px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 5%;
+}
+
+ .hab {
+    background-color: aquamarine;
+    max-width: 100%;
+    width: auto;
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+.hab > .hab-valor {
+    background-color: black;
+    height: 8px;
+    width: 90px;
+    margin-left: 30%;
+    margin-top: -7.7%;    
+}
+
+.hab > .hab-valor2 {
+    background-color: black;
+    height: 8px;
+    width: 80px;
+    margin-left: 30%;
+    margin-top: -7.7%;  
+}
+
+.hab > .hab-valor3 {
+    background-color: black;
+    height: 8px;
+    width: 40px;
+    margin-left: 30%;
+    margin-top: -7.7%;  
+}
+
+.hab > .hab-valor4 {
+    background-color: black;
+    height: 8px;
+    width: 60px;
+    margin-left: 30%;
+    margin-top: -7.7%;  
+}
+
+.hab > .hab-valor5 {
+    background-color: black;
+    height: 8px;
+    width: 60px;
+    margin-left: 30%;
+    margin-top: -7.7%;  
+}
+
+.hab > .hab-valor6 {
+    background-color: black;
+    height: 8px;
+    width: 80px;
+    margin-left: 30%;
+    margin-top: -7.7%;  
+}
+
+.certificados {
+    background-color: blueviolet;
+    margin-top: 6%;
+    max-width: 100%;
+}
+
+.certificados h2 {
+    background-color: bisque;
+    max-width: 50%;
+    width: auto;
+    letter-spacing: 4px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 5%;
+}
+
+.cert {
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 5%;
+}
+
+.link-certificado {
+    text-decoration: none;
+    color: blue;
+    font-style: italic;
+}
+
+.link-certificado:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ------------LADO DIREITO----------- */
+.lado-direito {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    margin-top: -58%;
+}
+
+
+
+
 
